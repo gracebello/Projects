@@ -41,10 +41,6 @@ System.out.println("Side A: " + String.format("%.2f", a) + " " + unit);
 System.out.println("Side B: " + String.format("%.2f", b) + " " + unit);
 System.out.println("Side C: " + String.format("%.2f", c) + " " + unit);
 
-
-
-// String.format("%.2f", arg)
-
     }
 
 }
