@@ -15,6 +15,11 @@ public class rightTriangle {
             unit = e.nextLine();
         System.out.println("Will you be calculating the length of the hypotenuse? Type yes or no.");
             hIf = e.nextLine();
+        while(!(hIf.equalsIgnoreCase("yes")||hIf.equalsIgnoreCase("no")))
+            {
+                System.out.println("Not a valid answer. Please type yes or no.");
+                    hIf = e.nextLine();
+            }
         if (hIf.equalsIgnoreCase("yes"))
         {
             System.out.println("To calculate the length of the hypotenuse, you will need to input the length of the two other sides.");
