@@ -40,8 +40,8 @@ public class rightTriangle {
                 a = e.nextDouble();
              while(!(c>a))
                 {
-                    System.out.println("The inputted hypotenuse is impossible. Note that the hypotenuse must be the longest side.");
-                    System.out.print(" Please input the hypotenuse again.");
+                    System.out.print("The inputted hypotenuse is impossible. Note that the hypotenuse must be the longest side.");
+                    System.out.println(" Please input the hypotenuse again.");
                     c = e.nextDouble();
                 }
                 b = Math.pow(c, 2) - Math.pow(a, 2);
