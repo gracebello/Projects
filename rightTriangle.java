@@ -36,14 +36,14 @@ public class rightTriangle {
             System.out.println("To calculate the length of the missing side, you will need to input the length of the hypotenuse, and the other known side.");
             System.out.println("Please input the length of the hypotenuse. Note that this is the longest possible side of the triangle.");
                 c = e.nextDouble();
-            while(!(c>a))
+            System.out.println("Please input the length of the other side.");
+                a = e.nextDouble();
+             while(!(c>a))
                 {
                     System.out.println("The inputted hypotenuse is impossible. Note that the hypotenuse must be the longest side.");
                     System.out.print(" Please input the hypotenuse again.");
                     c = e.nextDouble();
                 }
-            System.out.println("Please input the length of the other side.");
-                a = e.nextDouble();
                 b = Math.pow(c, 2) - Math.pow(a, 2);
                 b = Math.sqrt(b);
 
