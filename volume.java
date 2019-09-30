@@ -82,14 +82,53 @@ public class volume {
             ifVol= r.nextLine();
         }
         if(ifVol.equalsIgnoreCase("yes")) {
-            // ask which is missing
+            System.out.println("Please input the volume.");
+                volume = r.nextDouble();
+                radius = volume/(4/3*pi);
+                radius = Math.cbrt(radius);
+
         }
         else if (ifVol.equalsIgnoreCase("no")) {
-            // input standard
+            System.out.println("Please input the radius of the sphere.");
+                radius = r.nextDouble();
+                volume = (4/3)*(pi*Math.pow(radius,3));
+
         }
+        //done
     }
     else if (shape == 3) {
-
+        System.out.println("Do you already have the volume of the rectangular prism?");
+            ifVol = r.nextLine();
+        while(!(ifVol.equalsIgnoreCase("yes")||ifVol.equalsIgnoreCase("no"))) {
+            System.out.println("Invalid input. Please type yes or no.");
+            ifVol = r.nextLine();
+        }
+        if(ifVol.equalsIgnoreCase("yes")){
+            System.out.println("Name the missing measurement, either being height, length, or width.");
+                missing = r.nextLine();
+            while(!(missing.equalsIgnoreCase("height")||missing.equalsIgnoreCase("length")||missing.equalsIgnoreCase("width"))){
+                System.out.println("Invalid input. Please type height, length, or width.");
+                    missing = r.nextLine();
+            }
+            if (missing.equalsIgnoreCase("height")) {
+                //height ==
+            }
+            else if (missing.equalsIgnoreCase("length")) {
+                //length ==
+            }
+            else if (missing.equalsIgnoreCase("width")){
+               //width ==
+            }
+        }
+        else if(ifVol.equalsIgnoreCase("no")){
+                System.out.println("Please input the length.");
+                    length = r.nextDouble();
+                System.out.println("Please input the width.");
+                    width = r.nextDouble();
+                System.out.println("Please input the height.");
+                    height = r.nextDouble();
+                    volume = length * width * height;
+        }
     }
     else if (shape == 4) {
     }
