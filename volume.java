@@ -111,13 +111,31 @@ public class volume {
                     missing = r.nextLine();
             }
             if (missing.equalsIgnoreCase("height")) {
-                //height ==
+                System.out.println("Please input the volume.");
+                    volume = r.nextDouble();
+                System.out.println("Please input the width.");
+                    width = r.nextDouble();
+                System.out.println("Please input the length.");
+                    length = r.nextDouble();
+                height = volume/(length*width);
             }
             else if (missing.equalsIgnoreCase("length")) {
-                //length ==
+                System.out.println("Please input the volume.");
+                    volume = r.nextDouble();
+                System.out.println("Please input the width.");
+                    width = r.nextDouble();
+                System.out.println("Please input the height.");
+                    height = r.nextDouble();
+                length = volume/(width*height);
             }
-            else if (missing.equalsIgnoreCase("width")){
-               //width ==
+            else if (missing.equalsIgnoreCase("width")) {
+                System.out.println("Please input the volume.");
+                    volume = r.nextDouble();
+                System.out.println("Please input the length.");
+                    length = r.nextDouble();
+                System.out.println("Please input the height.");
+                    height = r.nextDouble();
+                width = volume/(length*height);
             }
         }
         else if(ifVol.equalsIgnoreCase("no")){
